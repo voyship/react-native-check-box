@@ -7,7 +7,7 @@
  * @flow
  */
 
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import {
     StyleSheet,
     View,
@@ -111,7 +111,7 @@ export default class CheckBox extends Component {
         }
 
         return (
-            <Image source={source} style={{tintColor: this._getTintColor()}}/>
+            <Image source={source} style={{ tintColor: this._getTintColor(), ...this.props.imageStyle }} />
         );
     }
 
